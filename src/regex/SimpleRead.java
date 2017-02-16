@@ -22,7 +22,7 @@ public class SimpleRead {
             int age = Integer.parseInt(numArrays[0]);
             double favorite = Double.parseDouble(numArrays[1]);
             System.out.println("age = " + age);
-            System.out.format("My favorite double is %f", favorite/2);
+            System.out.format("My favorite double is %f", favorite / 2);
         }catch (IOException e){
             e.printStackTrace();
         }
