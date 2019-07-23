@@ -26,7 +26,9 @@ public class ArrayMaker<T> {
 
     public static void main(String[] args){
         ArrayMaker<String> stringMaker = new ArrayMaker<>(String.class);
+        //生成9个空元素
         String[] strings = stringMaker.create(9);
+        //生成一个空的数组
         List<String> list = stringMaker.create();
         System.out.println(Arrays.toString(strings));
         System.out.println(list);

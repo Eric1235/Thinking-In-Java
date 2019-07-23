@@ -11,7 +11,9 @@ import java.util.concurrent.TimeUnit;
 public class FileLocking {
     public static void main(String[] args)throws Exception{
         FileOutputStream fos = new FileOutputStream("src/io/file/file.txt");
+        //使用文件锁
         FileLock fl = fos.getChannel().tryLock();//对整个文件上锁
+        //对文件进行操作的时候，阻塞其他线程操作文件
         if(fl != null){
             System.out.println("Locked file");
             TimeUnit.MILLISECONDS.sleep(10000);

@@ -7,7 +7,7 @@ public class Number99 {
 
     public static void main(String[] args) throws IOException{
         Point[][] numMat = new Point[9][9];
-        ArrayList<Point> al = new ArrayList<Point>();
+        ArrayList<Point> al = new ArrayList<>();
 
         initNumMat(numMat,al);
 

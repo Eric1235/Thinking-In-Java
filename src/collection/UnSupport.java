@@ -64,7 +64,7 @@ public class UnSupport {
         test("Modifiable Copy", new ArrayList<>(list));
 //        test("Arrays.asList()",list);
 
-        //产生一组不可变的列表
+        //产生一组不可变的列表，根本不能执行移除操作
         test("unmodifiableList()", Collections.unmodifiableList(new ArrayList<>(list)));
     }
 }

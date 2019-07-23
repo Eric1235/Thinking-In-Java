@@ -9,6 +9,10 @@ import java.io.PrintWriter;
  * Created by EricLi on 2016/12/30.
  * Email me : EricLi1235@gmail.com.
  */
+
+/**
+ * 使用BufferedReader将输入流接入，然后直接输出到控制台
+ */
 public class Echo {
     public static void main(String[] args)throws IOException{
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));

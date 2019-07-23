@@ -16,6 +16,7 @@ public class SortedDemo {
         //TreeSet是一种实现形式
         SortedSet<String> sortedSet = new TreeSet<>();
         Collections.addAll(sortedSet,"one two three four five six seven eight".split(" "));
+        //结果已经经过排序
         print(sortedSet);
         String low = sortedSet.first();
         print(low);
@@ -34,7 +35,9 @@ public class SortedDemo {
         print(low);
         print(high);
         print(sortedSet.subSet(low,high));
+        //比high大的部分
         print(sortedSet.headSet(high));
+        //比low小的部分
         print(sortedSet.tailSet(low));
 
     }

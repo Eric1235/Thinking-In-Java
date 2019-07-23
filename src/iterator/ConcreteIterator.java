@@ -11,6 +11,7 @@ public class ConcreteIterator<T> implements Iterator<T> {
 
     private List<T> list = new ArrayList<>();
 
+    //一个游标位置
     private int cursor = 0;
 
     public ConcreteIterator(List<T> list){

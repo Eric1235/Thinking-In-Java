@@ -36,7 +36,7 @@ public class BufferedInputFile {
     public static void main(String[] args)throws IOException{
         System.out.println(read("src/io/BufferedInputFile.java"));
         LinkedList<String> list = readAndreverse("src/collection/Groundhog.java");
-        for(int i = list.size()-1 ; i>=0 ; i--){
+        for(int i = list.size()-1 ; i >= 0 ; i--){
             System.out.println(list.get(i));
         }
     }

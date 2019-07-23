@@ -55,6 +55,7 @@ public class RestaurantWithQueues {
      * 厨师那里返回的东西
      * 订单
      * 食物（大概有按照订单来做好）
+     * 附加问题，厨师是不是什么菜都能做？
      */
     static class Plate{
         private final Order order;

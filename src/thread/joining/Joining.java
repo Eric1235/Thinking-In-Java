@@ -38,6 +38,7 @@ public class Joining {
         @Override
         public void run() {
             try {
+                //如果Joiner线程修改了某些东西，sleeper返回后，对Joiner写过的内容，都是可变的
                 sleeper.join();
 //                System.out.println("doWork");
             }catch (InterruptedException e){
