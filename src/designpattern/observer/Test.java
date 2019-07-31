@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class Test {
 
     public static void main(String[] args) {
-        final TaskLifeCycle<String> lifeCycle = new EmptyLifeCycle<String>();
+        final TaskLifeCycle<String> lifeCycle = new EmptyLifeCycle<>();
         Observable observable = new ObservableThread<>(lifeCycle,()-> {
             try {
                 TimeUnit.SECONDS.sleep(5);
